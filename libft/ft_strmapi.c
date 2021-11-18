@@ -6,7 +6,7 @@
 /*   By: oufisaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 11:51:57 by oufisaou          #+#    #+#             */
-/*   Updated: 2021/11/18 17:00:23 by oufisaou         ###   ########.fr       */
+/*   Updated: 2021/11/18 18:29:30 by oufisaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	c = 0;
-	res  = ft_strdup(s);
+	res = ft_strdup(s);
 	if (res == NULL)
 		return (NULL);
 	while (res[c] != 0)
@@ -30,5 +30,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (res);
 }
-
-

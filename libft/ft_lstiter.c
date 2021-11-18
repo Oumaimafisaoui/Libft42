@@ -6,7 +6,7 @@
 /*   By: oufisaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/18 17:27:24 by oufisaou          #+#    #+#             */
-/*   Updated: 2021/11/18 17:30:20 by oufisaou         ###   ########.fr       */
+/*   Updated: 2021/11/18 18:24:25 by oufisaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
-	if(lst && f)
+	if (lst && f)
 	{
-		while(lst)
+		while (lst)
 		{
 			f(lst->content);
 			lst = lst-> next;

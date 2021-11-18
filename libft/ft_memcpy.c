@@ -6,7 +6,7 @@
 /*   By: oufisaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 08:41:09 by oufisaou          #+#    #+#             */
-/*   Updated: 2021/11/18 17:28:19 by oufisaou         ###   ########.fr       */
+/*   Updated: 2021/11/18 18:33:47 by oufisaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,12 @@
 
 void	*ft_memcpy(void	*dest, const void *src, size_t n)
 {
-	size_t	index;
+	size_t			index;
 	unsigned char	*cast_dest;
 	unsigned char	*cast_src;
 
 	if ((!dest && !src) || !n)
-		return (NULL);
+		return (dest);
 	cast_dest = (unsigned char *)dest;
 	cast_src = (unsigned char *)src;
 	index = 0;

@@ -6,7 +6,7 @@
 /*   By: oufisaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 23:53:43 by oufisaou          #+#    #+#             */
-/*   Updated: 2021/11/14 20:11:19 by oufisaou         ###   ########.fr       */
+/*   Updated: 2021/11/18 18:25:01 by oufisaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_lstsize(t_list *lst)
 	int	c;
 
 	c = 0;
-	while(lst)
+	while (lst)
 	{
 		lst = lst -> next;
 		c++;

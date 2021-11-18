@@ -6,17 +6,18 @@
 /*   By: oufisaou <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/06 09:08:53 by oufisaou          #+#    #+#             */
-/*   Updated: 2021/11/18 17:28:35 by oufisaou         ###   ########.fr       */
+/*   Updated: 2021/11/18 18:28:22 by oufisaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	unsigned char	*cast_dest;
 	unsigned char	*cast_src;
 
-	if (!dest || !src || !n)
+	if ((!dest && !src) || !n)
 		return (dest);
 	cast_src = (unsigned char *)src;
 	cast_dest = (unsigned char *)dest;
@@ -31,5 +32,5 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	{
 		ft_memcpy(cast_dest, cast_src, n);
 	}
-	return (cast_dest);
+	return (dest);
 }
